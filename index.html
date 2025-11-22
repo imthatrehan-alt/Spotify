@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-add your own Playlish and enjoy fvrt Music</title>
+    <link rel="icon" href="/imgs/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/phone2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-top">
+                <a><img class="spotify invert" src="imgs/spotify.svg" alt=""></a>
+                <ul class="box disnone">
+                    <li>
+                        <img class="searchicon invert" src="imgs/search.svg" alt="search">
+                        <span class="search disnone"><input type="search" name="search" id=""
+                                placeholder="search song and playlist"></span>
+                        <span class="span">Search</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="left-bottom">
+                <li class="library"><img class="reload invert" src="imgs/lab.svg" alt="library"><span
+                        class="span2 reload2 hover">Your
+                        library</span>
+                    <h1 class="plus">+</h1>
+                </li>
+                <div class="songcontainer">
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal&nbsp;</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy </span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies&nbsp; </span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads&nbsp; </span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility&nbsp;</span></a></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="nevbar">
+                <div>
+                    <img class="hamburger invert" src="imgs/maximize.svg" alt="">
+                </div>
+                <div class="sign"><button class="up Sign-up">Sign up</button>
+                    <div><button class="in log-in">Log in</button></div>
+                </div>
+            </div>
+            <p class="heading hover">My Playlist</p>
+            <div class="cardcontainer">
+
+            </div>
+            <div class="play">
+                <div class="seekbar">
+                    <div class="progress"></div>
+                    <div class="circle"></div>
+                </div>
+                    <p class="songname"></p>
+                <div class="buttons">
+                    <img class="invert shuffle hover" src="imgs/shuffle.svg" alt="">
+                    <img class="previous invert hover width" src="imgs/prev.svg" alt="">
+                    <img class="masterPlay invert hover width" src="imgs/play.svg" alt="">
+                    <img class="next invert hover width" src="imgs/next.svg" alt="">
+                    <img class="loop hover invert" src="imgs/loop.svg" alt="">
+                </div>
+                <div class="volumecont">
+                    <p class="time"></p>
+                    <div class="vol">
+                        <img src="imgs/volume-mid.svg" alt="" class="volume invert hover">
+                        <div class="range">
+                            <div class="volume-progress"></div>
+                            <div class="volume-circle"></div>
+                            <input type="range" name="volume" id="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blankcontainer">
+        <div class="blank">
+            <div id="sign-up">
+                <div class="signup-page">
+                    <img src="imgs/close.svg" alt="" class="close invert">
+                    <img src="imgs/spotify-icon.svg" alt="" class="up-img">
+                    <h2 class="up-heading">Sign up to start listening</h2>
+                    <form action="mailto:imthatrehan@gmail.com">
+                        <label for="up-name">Name:</label>
+                        <input type="text" name="name" id="up-name" class="up-inputs" placeholder="Enter your Name">
+                        <label for="up-email">Email:</label>
+                        <input type="email" name="email" id="up-email" class="up-inputs" placeholder="name@domain.com">
+                        <label for="up-pass">Password:</label>
+                        <input type="password" name="password" id="up-pass" class="up-inputs"
+                            placeholder="Enter Your Password">
+                        <span class="up-checkbox-span">
+                            <input type="checkbox" name="agree" id="up-checkbox">
+                            <label id="checkbox" for="up-checkbox">Do you agree with our <span>terms and
+                                    conditions</span>
+                            </label>
+                        </span>
+                        <input type="submit" value="Submit" id="up-submit">
+                    </form>
+                    <p class="up-para">Already have an Account <span>log-in</span>.</p>
+                </div>
+            </div>
+        </div>
+        <div id="log-in">
+            <div class="login-page">
+                <img src="imgs/close.svg" alt="" class="close invert">
+                <img src="imgs/spotify-icon.svg" alt="" class="in-img">
+                <h2 class="in-heading">Log in to start listening</h2>
+                <form action="mailto:imthatrehan@gmail.com">
+                    <label for="in-email">Email:</label>
+                    <input type="email" name="email" id="in-email" class="in-inputs" placeholder="name@domain.com">
+                    <label for="in-pass">Password:</label>
+                    <input type="password" name="password" id="in-pass" class="in-inputs"
+                        placeholder="Enter Your Password">
+                    <span class="in-checkbox-span">
+                        <label id="checkbox" for="in-checkbox">Forgot Password ? <span>Reset Password</span>
+                        </label>
+                    </span>
+                    <input type="submit" value="Submit" id="in-submit">
+                </form>
+                <p class="up-para">Do not have an Account <span class="Sign-up">Sign-up</span>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="blank2" style="display: none;">
+        <div class="add">
+            <img src="imgs/close.svg" alt="" class="close2 invert">
+            <h2 class="upload-heading">Add or drop any file and folder here</h2>
+            <div class="upload-screen">
+                <div class="upload-area" id="drag-area">
+                    Drag and drop files or folder here
+                </div>
+                <div class="buttons2">
+                    <label for="file-upload" class="upload-button">
+                        Choose Files
+                        <input type="file" id="file-upload" multiple accept=".mp3">
+                    </label>
+                    <label for="folder-upload" class="upload-button2">
+                        Choose Folder
+                        <input type="file" id="folder-upload" webkitdirectory directory multiple accept=".mp3">
+                    </label>
+                </div>
+            </div>
+            <div class="album-details-form" style="display: none;">
+                <h3 class="details-heading">Album Details</h3>
+
+                <div class="form-group">
+                    <label for="cover-upload" class="form-label">Album Cover Image (will be saved as cover.jpg):</label>
+                    <input type="file" id="cover-upload" accept="image/jpeg,image/jpg,image/png" class="form-input">
+                    <small style="color: #838383; margin-top: 5px;">Optional: Upload a JPG/PNG image for your album
+                        cover</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="album-name" class="form-label">Album Name:</label>
+                    <input type="text" id="album-name" placeholder="Enter album name" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="album-description" class="form-label">Description:</label>
+                    <textarea id="album-description" placeholder="Enter description" class="form-textarea"></textarea>
+                </div>
+
+                <button id="create-album-btn" class="create-btn">Create Album</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
