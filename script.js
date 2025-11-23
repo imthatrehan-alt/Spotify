@@ -499,7 +499,7 @@ const playMusic = (track, pause = false) => {
 // get song event
 async function getsongs(folder) {
     currFolder = folder;
-    let a = await fetch(`http://127.0.0.1:5500/songs/${currFolder}/`);
+    let a = await fetch(`/songs/${currFolder}/`);
     let data = await a.text();
     let div = document.createElement("div");
     div.innerHTML = data;
@@ -738,7 +738,7 @@ async function filterSongsAndPlaylists(searchTerm, removeHighlight = false) {
                 }
             } else {
                 // Search in server albums
-                let response = await fetch(`http://127.0.0.1:5500/songs/${album.folder}/`);
+                let response = await fetch(`/songs/${album.folder}/`);
                 let data = await response.text();
                 let div = document.createElement("div");
                 div.innerHTML = data;
